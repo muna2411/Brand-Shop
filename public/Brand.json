@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "brand_name": "Gucci",
+      "image_url": "https://i.ibb.co/9qYdWjT/30.jpg"
+    },
+    {
+      "id": 2,
+      "brand_name": "Nike",
+      "image_url": "https://i.ibb.co/f4NKPKs/31.jpg" 
+    },
+    {
+      "id": 3,
+      "brand_name": "Prada",
+      "image_url": "https://i.ibb.co/SnCpKT1/32.jpg"
+    },
+    {
+      "id": 4,
+      "brand_name": "Calvin Klein",
+      "image_url": "https://i.ibb.co/Y73s3rd/33.jpg" 
+    },
+    {
+      "id": 5,
+      "brand_name": "Balenciaga",
+      "image_url": "https://i.ibb.co/tZzr7j2/34.jpg"
+    },
+    {
+      "id": 6,
+      "brand_name": "Louis Vuitton",
+      "image_url": "https://i.ibb.co/v1RKWhg/35.jpg"
+    }
+  ]
