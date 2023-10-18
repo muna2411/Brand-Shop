@@ -8,6 +8,7 @@ const Card = ({cards}) => {
     const { id,brand_name,image_url } = cards;
     return (
         <div>
+            
             <div className="carousel rounded-box">
                 <div className="carousel-item">
                    <button className='hero min-h-screen'> 

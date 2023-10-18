@@ -60,6 +60,12 @@ const Banner=()=> {
                Discover the essence of timeless style with Wish.</p>
         </div>
         </div>
+
+        
+        <div className='text-center my-[80px] mt-[150px]'>
+            <p className="text-black text-[60px] font-bold divider">The Brand Collection</p>
+            <p className="text-[#808080] text-[20px] mt-[50px] ">Choose your fashion style</p>
+        </div>
         </div>
     );
 };
