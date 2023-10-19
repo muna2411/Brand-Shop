@@ -12,6 +12,11 @@ import AddProduct from './components/AddProduct';
 import AuthProvider from './components/AuthProvider';
 import Login from './components/Login';
 import Register from './components/Register';
+import Users from './components/Users';
+import Details from './components/Details';
+import Mycart from './components/Mycart';
+import Update from './components/Update';
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -33,7 +38,29 @@ const router = createBrowserRouter([
        {
         path:"/register",
         element:<Register></Register>
-       }
+       },
+       {
+        path:'/users',
+        element:<Users></Users>,
+        loader:() => fetch('http://localhost:5000/users'),
+        
+      },
+      {
+        path:'/users/:id',
+        element:<Details></Details>,
+        loader:({params}) => fetch(`http://localhost:5000/users/${params.id}`)
+        
+      },
+      {
+        path:'/mycart',
+        element:<Mycart></Mycart>,
+        loader:({params}) => fetch(`http://localhost:5000/users/${params.id}`)
+      },
+      {
+        path: 'update/:id',
+        element: <Update></Update>,
+        loader:({params}) => fetch(`http://localhost:5000/users/${params.id}`)
+      },
     ]
   },
 ]);

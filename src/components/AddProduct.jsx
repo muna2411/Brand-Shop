@@ -1,13 +1,59 @@
-
+import Swal from 'sweetalert2'
 
 const AddProduct = () => {
+
+  const handleAddProduct = event =>{
+    event.preventDefault();
+    const form = event.target;
+    const id = form.id.value;
+    const name = form.name.value;
+    const brand = form.brand.value;
+    const types= form.types.value;
+    const price = form.price.value;
+    const description = form.description.value;
+    const ratings = form.ratings.value;
+    const image = form.image.value;
+
+    const user = {id,name,brand,types,price,description,ratings,image};
+    console.log(user);
+
+    fetch('http://localhost:5000/users',{
+      method: 'POST',
+      headers:{
+        'content-type' : 'application/json'
+      },
+      body:JSON.stringify(user)
+    })
+    .then(res => res.json())
+    .then(data => {
+      console.log(data);
+      if(data.insertedId){
+        Swal.fire({
+          title: 'Done!',
+          text: 'Information added successfully',
+          icon: 'success',
+          confirmButtonText: 'OK'
+        })
+      }
+      form.reset();
+    });
+    
+  }
+
     return (
         <div>
    <div className="hero min-h-screen w-[1500px] mx-[130px]" style={{backgroundImage: 'url(https://i.ibb.co/Sm53FD6/29.jpg)'}}>
   <div className="hero-overlay bg-opacity-60 bg-white"></div>
   <div >
     <div >
-    <form className="grid lg:grid-cols-3 sm:grid-cols-1 m-[50px]">
+    <form onSubmit={handleAddProduct} className="grid lg:grid-cols-3 sm:grid-cols-1 m-[50px]">
+
+              <div className="form-control m-[50px]">
+                <label className="label">
+                  <span className="label-text text-[20px] text-black font-semibold">ID</span>
+                </label>
+                <input type="text" placeholder="Type id" name="id" className="input input-bordered " style={{ border: "3px solid black" }} required />
+              </div>
 
               <div className="form-control m-[50px]">
                 <label className="label">
@@ -51,25 +97,18 @@ const AddProduct = () => {
                 <input type="text" placeholder="Type rating" name="ratings" className="input input-bordered" style={{ border: "3px solid black" }} required />
               </div>
 
-              <div className="form-control m-[50px] w-[1300px]">
+              <div className="form-control m-[50px] w-[850px]">
                 <label className="label">
                   <span className="label-text text-[20px] text-black font-semibold">Image</span>
                 </label>
                 <input type="text" placeholder="Import Image" name="image" className="input input-bordered" style={{ border: "3px solid black" }} required />
               </div>
 
-
-          
-             
-          
-          
+              <input type="submit" value="ADD" className="btn bg-black text-white form-control mt-[200px] w-[120px] h-[60px] ml-[300px]"  style={{ border: "3px solid black" }}/>
           
         </form>
-        <div className="form-control mt-6 w-[120px] h-[80px] ml-[700px]">
-                <button className="btn bg-black text-white " style={{ border: "3px solid black" }}>
-                <input type="submit" value="ADD" />
-                </button>
-              </div>
+
+          
     </div>
   </div>
 </div>
