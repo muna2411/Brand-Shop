@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import {  useLoaderData } from 'react-router-dom';
 import Store from './Store';
 import Adver from './Adver';
@@ -9,18 +9,18 @@ const Users = () => {
     const [users,setUsers] = useState(loadedUsers);
 
    
-  const brand = "Nike"; // Replace with the actual brand you want to fetch
+  
 
-  useEffect(() => {
-    fetch(`/users?brand=${brand}`)
-      .then((response) => response.json())
-      .then((data) => {
-        setUsers(data);
-      })
-      .catch((error) => {
-        console.error('Error fetching user data:', error);
-      });
-  }, [brand]);
+  // useEffect(() => {
+  //   fetch(`/users?brand=${brand}`)
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       setUsers(data);
+  //     })
+  //     .catch((error) => {
+  //       console.error('Error fetching user data:', error);
+  //     });
+  // }, [brand]);
 
   
     return (

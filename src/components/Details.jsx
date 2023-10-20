@@ -20,19 +20,8 @@ const [cardDetails, setCardDetails] = useState(loadedUsers);
         navigate(-1);
      }
 
-     const handlebtn = event =>{
-        event.preventDefault();
-        fetch(`/users/${_id}`,{
-            method: 'POST',
-            headers:{
-              'content-type' : 'application/json'
-            },
-            body:JSON.stringify(cardDetails)
-          })
-          .then(res => res.json())
-          .then(data => {
-            console.log(data);
-            if(data.insertedId){
+     const handlebtn = () =>{
+       
               Swal.fire({
                 title: 'Done!',
                 text: 'Information added successfully',
@@ -41,8 +30,7 @@ const [cardDetails, setCardDetails] = useState(loadedUsers);
               })
             }
             
-          });
-        }
+
 
     return (
         <div>
