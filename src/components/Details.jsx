@@ -20,12 +20,15 @@ const [cardDetails, setCardDetails] = useState(loadedUsers);
         navigate(-1);
      }
 
-     const handlebtn = ()=>{
-      
+     const handlebtn = e=>{
+      e.preventDefault();
       const name =cardDetails.name;
       const brand =cardDetails.brand;
+      const image =cardDetails.image;
+      const price =cardDetails.price;
+     
 
-      const cart = {name,brand};
+      const cart = {name,brand,image,price};
       fetch('http://localhost:5000/cart' ,{
               method: 'POST',
               headers:{

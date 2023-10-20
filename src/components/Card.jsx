@@ -8,34 +8,19 @@ import { useEffect, useState } from 'react';
 const Card = ({cards}) => {
     const { _id,brand,image_url } = cards;
 
-    const [userData, setUserData] = useState([]);
+    // const [userData, setUserData] = useState([]);
 
-    useEffect(() => {
-        fetch(`/users?brand=${brand}`) 
-          .then((response) => response.json())
-          .then((data) => {
-            setUserData(data);
-          })
-          .catch((error) => {
-            console.error('Error fetching user data:', error);
-          });
-      }, [brand]);
+    // useEffect(() => {
+    //     fetch(`/users?brand=${brand}`) 
+    //       .then((response) => response.json())
+    //       .then((data) => {
+    //         setUserData(data);
+    //       })
+    //       .catch((error) => {
+    //         console.error('Error fetching user data:', error);
+    //       });
+    //   }, [brand]);
 
-    // const handleDelete = _id =>{
-    //     console.log('delete' , _id);
-    //     fetch(`https://brandshop-server-ewb01sx2a-munas-projects.vercel.app/users/${_id}`,{
-    //         method: 'DELETE'
-    //     })
-    //     .then(res => res.json())
-    //     .then(data => {
-    //         console.log(data);
-    //         if(data.deletedCount>0){
-    //             alert('deleted successfully');
-    //             const remaining = users.filter(user => user._id !== _id)
-    //             SetUsers(remaining)
-    //         }
-    //     })
-    //   }
 
     return (
         <div>

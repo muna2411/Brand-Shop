@@ -8,8 +8,6 @@ const Users = () => {
     const loadedUsers =useLoaderData();
     const [users,setUsers] = useState(loadedUsers);
 
-   
-  
 
   // useEffect(() => {
   //   fetch(`/users?brand=${brand}`)

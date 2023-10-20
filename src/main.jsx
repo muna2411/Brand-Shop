@@ -58,6 +58,11 @@ const router = createBrowserRouter([
         loader:() =>  fetch('http://localhost:5000/cart')
       },
       {
+        path:'/mycart/:id',
+        element:<PrivateRoute><Mycart></Mycart></PrivateRoute>,
+        loader:({params}) =>  fetch(`http://localhost:5000/cart/${params}`)
+      },
+      {
         path: 'update/:id',
         element: <PrivateRoute><Update></Update></PrivateRoute>,
         loader:({params}) => fetch(`https://brandshop-server-ewb01sx2a-munas-projects.vercel.app/users/${params.id}`)
