@@ -1,12 +1,12 @@
 
 const About = () => {
     return (
-        <div className="flex justify-between items-center bg-black my-[100px]">
+        <div className="grid justify-between items-center bg-black my-[100px] lg:grid-cols-2 sm:grid-cols-2">
             <div>
                 <img className="w-[700px] h-[900px] " src="https://i.ibb.co/WB5BqjP/113.jpg" ></img>
                 
             </div>
-            <div className="text-white text-center mr-[200px] ">
+            <div className="text-white text-center lg:mr-[200px] sm:mr-[0px]">
                 <h2 className="text-[40px]">Exclusive Designs Crafed by Experts</h2>
                 <i className="text-[18px]">High Quality</i>
                 <div className="divider h-[2px]" style={{ backgroundColor: 'white' }}></div>

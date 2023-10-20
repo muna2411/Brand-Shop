@@ -3,14 +3,12 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-//import './styles.css';
-
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const Adver = () => {
     return (
         <div>
-        <div className='my-[50px] w-[700px] h-[500px] mx-[530px]'>
+        <div className='my-[50px] lg:w-[700px] sm:w-[630px] h-[500px] lg:mx-[530px] sm:mx-[0px]'>
           
     <Swiper
      spaceBetween={30}
@@ -24,7 +22,8 @@ const Adver = () => {
      }}
      navigation={true}
      modules={[Autoplay, Pagination, Navigation]}
-     className="mySwiper"
+     className="mySwiper "
+     
     >
       <SwiperSlide>
       <img className="w-[700px] h-[500px]" src="https://i.ibb.co/MGYXFJK/147.jpg"></img>

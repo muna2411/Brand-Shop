@@ -12,7 +12,7 @@ const Banner=()=> {
     return (
         
           <div>
-        <div className='my-[50px] w-[1200px] h-[700px] mx-[280px]'>
+        <div className='my-[50px] lg:w-[1200px] sm:w-[630px] h-[700px] lg:mx-[280px] sm:mx[0px]'>
           
     <Swiper
      spaceBetween={30}
@@ -44,19 +44,19 @@ const Banner=()=> {
     </Swiper>
  
         </div>
-        <div className='flex justify-around items-center my-[100px]'>
+        <div className='grid  justify-around items-center my-[100px] lg:grid-cols-2 sm:grid-cols-1 mx-[20px]'>
         <div>
             <i className="text-black text-[50px] font-bold mx-[5px]">Individuality of your design. <br/>Create your style .</i>
             <p className="text-[20px] text-[#808080]">High Quality Fashion...</p>
         </div>
         <div>
-            <p className="text-[18px]">Welcome to Wish, where style meets innovation and sophistication. At Wish, we are dedicated to redefining <br/> 
+            <p className="text-[18px] ">Welcome to Wish, where style meets innovation and sophistication. At Wish, we are dedicated to redefining <br/> 
                fashion through a blend of contemporary design, sustainable practices, and unmatched quality. Our team of <br/>
                visionary designers continuously crafts collections that resonate with the latest trends, ensuring you always<br/> 
                step out in style. We take pride in our commitment to sustainability, using eco-friendly materials and ethical <br/>
-               manufacturing processes to create fashion that not only makes you look good but feel good about your choices. <br/>
-               With a global reach and a seamless online shopping experience, Wish makes it effortless to access our curated <br/>
-               fashion selections. From chic urban wear to elegant evening attire, our collections cater to diverse tastes.<br/>
+               manufacturing processes to create fashion that not only makes you look good but feel good about your <br/>choices. 
+               With a global reach and a seamless online shopping experience, Wish makes it effortless to access<br/> our curated 
+               fashion selections. From chic urban wear to elegant evening attire, our collections cater to<br/> diverse tastes.
                Discover the essence of timeless style with Wish.</p>
         </div>
         </div>

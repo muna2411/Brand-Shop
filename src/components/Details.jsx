@@ -51,12 +51,12 @@ const [cardDetails, setCardDetails] = useState(loadedUsers);
 
 <div className="lg:flex justify-around items-center my-[30px]" >
         <div>
-            <img className="h-[700px] w-[500px]" style={{ border: "2px solid black" }} src={cardDetails.image}></img>
+            <img className="h-[700px] w-[500px] lg:ml-[0px] sm:ml-[50px]" style={{ border: "2px solid black" }} src={cardDetails.image}></img>
         </div>
-        <div className="lg:h-[650px] lg:w-[700px] sm:h-[800px] sm:w-[700px] ml-[100px]">
+        <div className="lg:h-[650px] lg:w-[700px] sm:h-[800px] sm:w-[500px] ml-[100px]">
             <p className=" text-[45px] font-bold my-[10px] text-black" data-aos="fade-up">{cardDetails.name}</p>
             <p className=" text-[45px] font-bold my-[10px]" style={{color:'#87CEEB'}} data-aos="fade-up">{cardDetails.brand}</p>
-            <div className="divider my-[10px]" ></div> 
+            <div className="divider my-[10px] lg:w-[800px] sm:w-[400px]" ></div> 
               <p className=" text-[35px] font-bold my-[10px]">{cardDetails.types}</p>
               <p className=" text-[20px]  my-[10px]">{cardDetails.description}</p>
               <p className="text-black text-[23px] font-bold my-[10px]">Price - {cardDetails.price}</p>

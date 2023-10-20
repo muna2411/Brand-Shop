@@ -36,10 +36,10 @@ const Login = () => {
                 <img className="w-[700px] h-[1000px]" src="https://i.ibb.co/SndppRW/121.jpg"></img>
                 </div>
                 <div className="lg:w-[960px] h-[1000px] sm:w-[425px]  justify-between items-center" >
-                <div className="divider w-[600px] mx-[180px] mt-[100px]">  <h2 className="text-black text-[60px] font-bold ">Wish</h2> </div>
+                <div className="divider lg:w-[600px] sm:w-[450px] lg:mx-[180px] sm:mx-[100px] mt-[100px]">  <h2 className="text-black text-[60px] font-bold ">Wish</h2> </div>
                     <p className="text-center mt-[100px] text-[30px] font-bold text-black">Sign In</p>
                     <form onSubmit={handleSignIn} className="lg:w-[500px] lg:h-[600px] lg:mx-[250px] sm:w-[400px]">
-              <div className="form-control">
+              <div className="form-control sm:ml-[100px] lg:ml-[0px]">
                 <label className="label">
                   <span className="label-text text-[18px]">Email</span>
                 </label>
@@ -50,7 +50,7 @@ const Login = () => {
                 className="input input-bordered" required />
               </div>
     
-              <div className="form-control ">
+              <div className="form-control sm:ml-[100px] lg:ml-[0px]">
                 <label className="label">
                   <span className="label-text text-[18px]">Password</span>
                 </label>
@@ -65,7 +65,7 @@ const Login = () => {
               </div>
               </div>
 
-              <div className="form-control mt-6 w-[500px] h-[80px] ">
+              <div className="form-control mt-6 lg:w-[500px] h-[80px] sm:ml-[100px] lg:ml-[0px] sm:w-[310px]">
                 <button className="btn bg-black text-white ">Login</button>
               </div>
               
@@ -75,8 +75,8 @@ const Login = () => {
               {
                 loginError && <p className="text-red-700 text-[18px]">{loginError}</p>
               }
-              <div className="divider">OR</div>
-              <p className="text-[18px]" >Create an Account   <Link className="text-[blue]  underline underline-offset-4 ..." to="/register">Register</Link></p>
+              <div className="divider sm:ml-[100px] lg:ml-[0px]">OR</div>
+              <p className="text-[18px] sm:ml-[100px] lg:ml-[0px]" >Create an Account   <Link className="text-[blue]  underline underline-offset-4 ..." to="/register">Register</Link></p>
             </form>
                 </div>
                 

@@ -16,6 +16,7 @@ import Users from './components/Users';
 import Details from './components/Details';
 import Mycart from './components/Mycart';
 import Update from './components/Update';
+import PrivateRoute from './components/PrivateRoute';
 
 const router = createBrowserRouter([
   {
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
       },
       {
         path:"/addproduct",
-        element:<AddProduct></AddProduct> ,
+        element:<PrivateRoute><AddProduct></AddProduct></PrivateRoute> ,
        },
        {
         path:"/login",
@@ -53,12 +54,12 @@ const router = createBrowserRouter([
       },
       {
         path:'/mycart',
-        element:<Mycart></Mycart>,
+        element:<PrivateRoute><Mycart></Mycart></PrivateRoute>,
         loader:({params}) => fetch(`http://localhost:5000/users/${params.id}`)
       },
       {
         path: 'update/:id',
-        element: <Update></Update>,
+        element: <PrivateRoute><Update></Update></PrivateRoute>,
         loader:({params}) => fetch(`http://localhost:5000/users/${params.id}`)
       },
     ]

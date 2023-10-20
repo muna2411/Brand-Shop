@@ -56,10 +56,10 @@ else if(!/[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(pass)){
             <div className="lg:flex justify-between items-center">
                 
                 <div className="lg:w-[960px] h-[1000px] sm:w-[425px]  justify-between items-center" >
-                <div className="divider w-[600px] mx-[180px] mt-[100px]">  <h2 className="text-black text-[60px] font-bold ">Wish</h2> </div>
+                <div className="divider lg:w-[600px] sm:w-[450px] lg:mx-[180px] sm:mx-[100px] mt-[100px]">  <h2 className="text-black text-[60px] font-bold ">Wish</h2> </div>
                     <p className="text-center mt-[100px] text-[30px] font-bold text-black">Register</p>
                     <form onSubmit={handleRegister} className="lg:w-[500px] lg:h-[600px] lg:mx-[250px] sm:w-[400px]">
-              <div className="form-control ">
+              <div className="form-control sm:ml-[100px] lg:ml-[0px]">
                 <label className="label ">
                   <span className="label-text text-[18px]">Email</span>
                 </label>
@@ -71,7 +71,7 @@ else if(!/[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(pass)){
               </div>
               
 
-              <div className="form-control lg:w-[500px] ] sm:w-[400px]">
+              <div className="form-control  sm:ml-[100px] lg:ml-[0px]">
                 <label className="label">
                   <span className="label-text text-[18px]">Password</span>
                 </label>
@@ -86,7 +86,7 @@ else if(!/[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(pass)){
               </div>
               </div>
 
-              <div className="form-control mt-6 w-[500px] h-[80px] ">
+              <div className="form-control mt-6 lg:w-[500px] h-[80px] sm:ml-[100px] lg:ml-[0px] sm:w-[310px]">
                 <button onClick={handleRegisterbtn} className="btn bg-black text-white ">Submit</button>
               </div>
               {
@@ -95,8 +95,8 @@ else if(!/[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(pass)){
               {
                 success && <p className="text-green-700 text-[18px]">{success}</p>
               }
-              <div className="divider">OR</div>
-              <p className="text-[18px]" >Already have an account ?  <Link className="text-[blue]  underline underline-offset-4 ..." to="/login">Login</Link></p>
+              <div className="divider sm:ml-[100px] lg:ml-[0px]">OR</div>
+              <p className="text-[18px] sm:ml-[100px] lg:ml-[0px]" >Already have an account ?  <Link className="text-[blue]  underline underline-offset-4 ..." to="/login">Login</Link></p>
             
             </form>
             

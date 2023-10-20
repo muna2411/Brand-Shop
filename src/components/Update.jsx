@@ -44,7 +44,7 @@ const Update = () => {
     }
     return (
         <div>
-        <div className="hero min-h-screen w-[1500px] mx-[130px]" style={{backgroundImage: 'url(https://i.ibb.co/wd8z2fW/149.jpg)'}}>
+        <div className="hero min-h-screen lg:w-[1500px] sm:w-[630px] lg:mx-[130px] sm:mx-[0px]" style={{backgroundImage: 'url(https://i.ibb.co/wd8z2fW/149.jpg)'}}>
        <div className="hero-overlay bg-opacity-30 bg-white"></div>
        <div >
          <div >
@@ -96,7 +96,7 @@ const Update = () => {
                      <input type="text" placeholder="Import Image" name="image" defaultValue={image} className="input input-bordered" style={{ border: "3px solid black" }} required />
                    </div>
      
-                   <input type="submit" value="Submit" className="btn bg-black text-white form-control mt-[100px] w-[120px] h-[60px] ml-[650px]"  style={{ border: "3px solid black" }}/>
+                   <input type="submit" value="Submit" className="btn bg-black text-white form-control mt-[100px] w-[120px] h-[60px] lg:ml-[650px] sm:ml-[170px]"  style={{ border: "3px solid black" }}/>
                
              </form>
      

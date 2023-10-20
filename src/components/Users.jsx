@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {  useLoaderData } from 'react-router-dom';
 import Store from './Store';
 import Adver from './Adver';
@@ -6,23 +6,22 @@ import Adver from './Adver';
 const Users = () => {
     
     const loadedUsers =useLoaderData();
-    const [users,SetUsers] = useState(loadedUsers)
+    const [users,setUsers] = useState(loadedUsers);
 
-    // const handleDelete = _id =>{
-    //     console.log('delete' , _id);
-    //     fetch(`http://localhost:5000/users/${_id}`,{
-    //         method: 'POST'
-    //     })
-    //     .then(res => res.json())
-    //     .then(data => {
-    //         console.log(data);
-    //         if(data.deletedCount>0){
-    //             alert('deleted successfully');
-    //             const remaining = users.filter(user => user._id !== _id)
-    //             SetUsers(remaining)
-    //         }
-    //     })
-    //  }
+   
+  const brand = "Nike"; // Replace with the actual brand you want to fetch
+
+  useEffect(() => {
+    fetch(`/users?brand=${brand}`)
+      .then((response) => response.json())
+      .then((data) => {
+        setUsers(data);
+      })
+      .catch((error) => {
+        console.error('Error fetching user data:', error);
+      });
+  }, [brand]);
+
   
     return (
         <div>

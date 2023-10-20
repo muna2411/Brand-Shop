@@ -42,11 +42,11 @@ const AddProduct = () => {
 
     return (
         <div>
-   <div className="hero min-h-screen w-[1500px] mx-[130px]" style={{backgroundImage: 'url(https://i.ibb.co/Sm53FD6/29.jpg)'}}>
+   <div className="hero min-h-screen lg:w-[1500px] sm:w-[630px] lg:mx-[130px] sm:mx-[0px]" style={{backgroundImage: 'url(https://i.ibb.co/Sm53FD6/29.jpg)'}}>
   <div className="hero-overlay bg-opacity-60 bg-white"></div>
   <div >
     <div >
-    <form onSubmit={handleAddProduct} className="grid lg:grid-cols-3 sm:grid-cols-1 m-[50px]">
+    <form onSubmit={handleAddProduct} className="grid lg:grid-cols-3 sm:grid-cols-1 lg:m-[50px] sm:m-[10px]">
 
               <div className="form-control m-[50px]">
                 <label className="label">
@@ -97,14 +97,14 @@ const AddProduct = () => {
                 <input type="text" placeholder="Type rating" name="ratings" className="input input-bordered" style={{ border: "3px solid black" }} required />
               </div>
 
-              <div className="form-control m-[50px] w-[850px]">
+              <div className="form-control m-[50px] lg:w-[850px] sm:w-[500px]">
                 <label className="label">
                   <span className="label-text text-[20px] text-black font-semibold">Image</span>
                 </label>
                 <input type="text" placeholder="Import Image" name="image" className="input input-bordered" style={{ border: "3px solid black" }} required />
               </div>
 
-              <input type="submit" value="ADD" className="btn bg-black text-white form-control mt-[200px] w-[120px] h-[60px] ml-[300px]"  style={{ border: "3px solid black" }}/>
+              <input type="submit" value="ADD" className="btn bg-black text-white form-control lg:mt-[200px] sm:mt-[50px] w-[120px] h-[60px] ml-[300px]"  style={{ border: "3px solid black" }}/>
           
         </form>
 
