@@ -42,7 +42,19 @@ else if(!/[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(pass)){
            .then(result =>{
             console.log(result.user);
             setSuccess("successful")
-
+            const createdAt = result.product?.metadata?.creationTime;
+            const product = {email,createdAt:createdAt};
+            fetch('http://localhost:5000/product' ,{
+              method: 'POST',
+              headers:{
+                'content-type' : 'application/json'
+              },
+              body:JSON.stringify(product)
+            })
+            .then(res => res.json())
+            .then(data =>{
+              console.log(data)
+            })
            })
            .catch(error =>{
             console.log(error);

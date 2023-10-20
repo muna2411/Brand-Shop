@@ -43,24 +43,24 @@ const router = createBrowserRouter([
        {
         path:'/users',
         element:<Users></Users>,
-        loader:() => fetch('http://localhost:5000/users'),
+        loader:() => fetch('https://brandshop-server-ewb01sx2a-munas-projects.vercel.app/users'),
         
       },
       {
         path:'/users/:id',
         element:<Details></Details>,
-        loader:({params}) => fetch(`http://localhost:5000/users/${params.id}`)
+        loader:({params}) => fetch(`https://brandshop-server-ewb01sx2a-munas-projects.vercel.app/users/${params.id}`)
         
       },
       {
         path:'/mycart',
         element:<PrivateRoute><Mycart></Mycart></PrivateRoute>,
-        //loader:({params}) => fetch(`http://localhost:5000/users/${params.brand}`)
+        loader:() =>  fetch('http://localhost:5000/cart')
       },
       {
         path: 'update/:id',
         element: <PrivateRoute><Update></Update></PrivateRoute>,
-        loader:({params}) => fetch(`http://localhost:5000/users/${params.id}`)
+        loader:({params}) => fetch(`https://brandshop-server-ewb01sx2a-munas-projects.vercel.app/users/${params.id}`)
       },
     ]
   },

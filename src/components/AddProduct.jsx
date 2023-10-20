@@ -17,7 +17,7 @@ const AddProduct = () => {
     const user = {id,name,brand,types,price,description,ratings,image};
     console.log(user);
 
-    fetch('http://localhost:5000/users',{
+    fetch('https://brandshop-server-ewb01sx2a-munas-projects.vercel.app/users',{
       method: 'POST',
       headers:{
         'content-type' : 'application/json'

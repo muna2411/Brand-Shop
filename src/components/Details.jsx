@@ -20,16 +20,32 @@ const [cardDetails, setCardDetails] = useState(loadedUsers);
         navigate(-1);
      }
 
-     const handlebtn = () =>{
-       
+     const handlebtn = ()=>{
+      
+      const name =cardDetails.name;
+      const brand =cardDetails.brand;
+
+      const cart = {name,brand};
+      fetch('http://localhost:5000/cart' ,{
+              method: 'POST',
+              headers:{
+                'content-type' : 'application/json'
+              },
+              body:JSON.stringify(cart)
+            })
+            .then(res => res.json())
+            .then(data =>{
+              console.log(data)
+            })
+
               Swal.fire({
                 title: 'Done!',
                 text: 'Information added successfully',
                 icon: 'success',
                 confirmButtonText: 'OK'
               })
-            }
             
+            }    
 
 
     return (
