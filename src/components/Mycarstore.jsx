@@ -40,9 +40,6 @@ const Mycarstore = ({user,users,setUsers}) => {
         })
     }
 
-    
-    
-
     return (
         <div >
         <div >
