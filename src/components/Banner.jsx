@@ -43,21 +43,24 @@ const Banner=()=> {
     </Swiper>
  
         </div>
-        <div className='grid  justify-around items-center my-[100px] lg:grid-cols-2 sm:grid-cols-1 mx-[100px]'>
+        <div className='grid  justify-around items-center my-[100px] lg:grid-cols-2 sm:grid-cols-1 mx-[50px]'>
         <div>
             <i className="text-black text-[50px] font-bold mx-[5px]">Individuality of your design. <br/>Create your style .</i>
             <p className="text-[20px] text-[#808080]">High Quality Fashion...</p>
         </div>
         <div>
-            <p className="text-[18px]  ">Welcome to Wish, where style meets innovation and sophistication. At Wish, we are dedicated to<br/> 
-            redefining fashion through a blend of contemporary design, sustainable practices, and unmatched<br/>
-             quality. Our team of visionary designers continuously crafts collections that resonate with the<br/>
-              latest trends, ensuring you always step out in style. We take pride in our commitment to <br/>
-              sustainability, using eco-friendly materials and ethical manufacturing processes to create fashion<br/>
-               that not only makes you look good but feel good about your choices. 
-               With a global reach and a <br/> seamless online shopping experience, Wish makes it effortless to access our curated 
-               fashion selections. From chic urban wear to elegant evening attire, our collections cater to<br/> diverse tastes.
-               Discover the essence of timeless style with Wish.</p>
+            <p className="text-[18px]  ">Welcome to Wish, where style meets innovation and sophistication.<br/>
+                                         At Wish, we are dedicated to redefining fashion through a blend of <br/>
+                                         contemporary design, sustainable practices, and unmatched quality. <br/>
+                                         Our team of visionary designers continuously crafts collections that <br/>
+                                         resonate with the latest trends, ensuring you always step out in style. <br/>
+                                         We take pride in our commitment to sustainability, using eco-friendly <br/>
+                                         materials and ethical manufacturing processes to create fashion that <br/>
+                                         not only makes you look good but feel good about your choices. With a <br/>
+                                         global reach and a seamless online shopping experience, Wish makes it <br/>
+                                         effortless to access our curated fashion selections. From chic urban wear<br/>
+                                         to elegant evening attire, our collections cater to diverse tastes.Discover<br/>
+                                        the essence of timeless style with Wish.</p>
         </div>
         </div>
 
