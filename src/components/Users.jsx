@@ -26,7 +26,7 @@ const Users = () => {
             <Adver></Adver>
             <div className="grid lg:grid-cols-3 sm:grid-cols-1 lg:mx-[80px] mb-[200px] ">
                 {
-                    users.map(user => <Store key={user._id} user={user} ></Store>)
+                    users.map(user => <Store key={user._id} user={user} users={users} setUsers={setUsers}></Store>)
                 }
             </div>
         </div>

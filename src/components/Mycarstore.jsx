@@ -18,7 +18,7 @@ const Mycarstore = ({user,users,setUsers}) => {
             if (result.isConfirmed) {
 
                console.log('confirm')
-                fetch(`http://localhost:5000/cart/${_id}`, {
+                fetch(`https://brandshop-server-4yw2i68k9-munas-projects.vercel.app/cart/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
@@ -56,13 +56,13 @@ const Mycarstore = ({user,users,setUsers}) => {
                         <p className="text-[#87CEEB] text-[18px]">Price :{price}</p>
                         
                         </div>
-                    <div className="card-actions flex justify-around items-center">
-                    <Link >
-                        <button  onClick={() => handleDelete(_id)} className="btn ml-[300px]">Delete</button>
-                    </Link>
                    
-                    </div>
                 </div>
+                <div>
+                    <Link >
+                        <button  onClick={() => handleDelete(_id)} className="btn ml-[350px] mb-[550px] w-[50px] h-[50px] text-[18px]" style={{ borderRadius: "50%" , border: "1px solid black"}}>X</button>
+                    </Link>
+                    </div>
             </div>
         </div>
     </div>

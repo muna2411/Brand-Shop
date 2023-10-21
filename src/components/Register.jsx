@@ -44,7 +44,7 @@ else if(!/[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(pass)){
             setSuccess("successful")
             const createdAt = result.product?.metadata?.creationTime;
             const product = {email,createdAt:createdAt};
-            fetch('http://localhost:5000/product' ,{
+            fetch('https://brandshop-server-4yw2i68k9-munas-projects.vercel.app/product' ,{
               method: 'POST',
               headers:{
                 'content-type' : 'application/json'
