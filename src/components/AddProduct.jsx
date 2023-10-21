@@ -37,8 +37,7 @@ const AddProduct = () => {
       }
       form.reset();
     });
-    
-  }
+}
 
     return (
         <div>
@@ -106,9 +105,7 @@ const AddProduct = () => {
 
               <input type="submit" value="ADD" className="btn bg-black text-white form-control lg:mt-[200px] sm:mt-[50px] w-[120px] h-[60px] ml-[300px]"  style={{ border: "3px solid black" }}/>
           
-        </form>
-
-          
+        </form> 
     </div>
   </div>
 </div>
