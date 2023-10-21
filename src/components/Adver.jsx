@@ -24,7 +24,6 @@ const Adver = () => {
      navigation={true}
      modules={[Autoplay, Pagination, Navigation]}
      className="mySwiper "
-     
     >
       <SwiperSlide>
       <img className="w-[700px] h-[500px]" src="https://i.ibb.co/MGYXFJK/147.jpg"></img>
@@ -35,8 +34,6 @@ const Adver = () => {
       <SwiperSlide>
       <img className="w-[700px] h-[500px]" src="https://i.ibb.co/n1bkPsQ/146.jpg"></img>
       </SwiperSlide>
-     
-     
     </Swiper>
         </div>
         </div>
