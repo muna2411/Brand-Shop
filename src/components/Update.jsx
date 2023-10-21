@@ -21,7 +21,7 @@ const Update = () => {
         console.log(updated);
 
   
-        fetch(`https://brandshop-server-4yw2i68k9-munas-projects.vercel.app/users/${_id}`, {
+        fetch(`https://brandshop-server-41em3ix38-munas-projects.vercel.app/users/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -44,8 +44,8 @@ const Update = () => {
     }
     return (
         <div>
-        <div className="hero min-h-screen lg:w-[1500px] sm:w-[630px] lg:mx-[130px] sm:mx-[0px]" style={{backgroundImage: 'url(https://i.ibb.co/wd8z2fW/149.jpg)'}}>
-       <div className="hero-overlay bg-opacity-30 bg-white"></div>
+        <div className="hero min-h-screen lg:w-[1400px] lg:h-[1000px] sm:w-[630px] lg:mx-[130px] sm:mx-[0px] " style={{backgroundImage: 'url(https://i.ibb.co/9Wdz9Y5/152.jpg)'}}>
+       <div className="hero-"></div>
        <div >
          <div >
          <form onSubmit={handleUpdateProduct} className="grid lg:grid-cols-3 sm:grid-cols-1 m-[50px]">
@@ -96,7 +96,7 @@ const Update = () => {
                      <input type="text" placeholder="Import Image" name="image" defaultValue={image} className="input input-bordered" style={{ border: "3px solid black" }} required />
                    </div>
      
-                   <input type="submit" value="Submit" className="btn bg-black text-white form-control mt-[100px] w-[120px] h-[60px] lg:ml-[650px] sm:ml-[170px]"  style={{ border: "3px solid black" }}/>
+                   <input type="submit" value="Submit" className="btn bg-black text-white form-control mt-[100px] w-[120px] h-[60px] lg:ml-[600px] sm:ml-[170px]"  style={{ border: "3px solid black" }}/>
                
              </form>
      

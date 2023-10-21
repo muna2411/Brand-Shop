@@ -18,7 +18,7 @@ const Mycarstore = ({user,users,setUsers}) => {
             if (result.isConfirmed) {
 
                console.log('confirm')
-                fetch(`https://brandshop-server-4yw2i68k9-munas-projects.vercel.app/cart/${_id}`, {
+                fetch(`https://brandshop-server-41em3ix38-munas-projects.vercel.app/cart/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
@@ -27,7 +27,7 @@ const Mycarstore = ({user,users,setUsers}) => {
                         if (data.deletedCount > 0) {
                             Swal.fire(
                                 'Deleted!',
-                                'Your Coffee has been deleted.',
+                                'Your product has been deleted.',
                                 'success'
                             )
                             const remaining = users.filter(p => p._id !==_id)

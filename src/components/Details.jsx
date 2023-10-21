@@ -29,7 +29,7 @@ const [cardDetails, setCardDetails] = useState(loadedUsers);
      
 
       const cart = {name,brand,image,price};
-      fetch('https://brandshop-server-4yw2i68k9-munas-projects.vercel.app/cart' ,{
+      fetch('https://brandshop-server-41em3ix38-munas-projects.vercel.app/cart' ,{
               method: 'POST',
               headers:{
                 'content-type' : 'application/json'

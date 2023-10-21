@@ -8,7 +8,8 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 const Adver = () => {
     return (
         <div>
-        <div className='my-[50px] lg:w-[700px] sm:w-[630px] h-[500px] lg:mx-[530px] sm:mx-[0px]'>
+         
+        <div className='my-[50px] lg:w-[700px] sm:w-[630px] h-[500px] lg:mx-[500px] sm:mx-[0px]'>
           
     <Swiper
      spaceBetween={30}

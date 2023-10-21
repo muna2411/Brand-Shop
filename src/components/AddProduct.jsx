@@ -17,7 +17,7 @@ const AddProduct = () => {
     const user = {id,name,brand,types,price,description,ratings,image};
     console.log(user);
 
-    fetch('https://brandshop-server-4yw2i68k9-munas-projects.vercel.app/users',{
+    fetch('https://brandshop-server-41em3ix38-munas-projects.vercel.app/users',{
       method: 'POST',
       headers:{
         'content-type' : 'application/json'
@@ -42,7 +42,7 @@ const AddProduct = () => {
 
     return (
         <div>
-   <div className="hero min-h-screen lg:w-[1500px] sm:w-[630px] lg:mx-[130px] sm:mx-[0px]" style={{backgroundImage: 'url(https://i.ibb.co/Sm53FD6/29.jpg)'}}>
+   <div className="hero min-h-screen lg:w-[1450px] sm:w-[630px] lg:mx-[130px] sm:mx-[0px]" style={{backgroundImage: 'url(https://i.ibb.co/Sm53FD6/29.jpg)'}}>
   <div className="hero-overlay bg-opacity-60 bg-white"></div>
   <div >
     <div >

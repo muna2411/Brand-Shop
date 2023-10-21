@@ -9,6 +9,7 @@ import Logo from "./Logo";
 
 
 const Home = () => {
+
     const cards = useLoaderData();
     return (
         <div>

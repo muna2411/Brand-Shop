@@ -5,7 +5,7 @@ const Store = ({user}) => {
     return (
     <div >
         <div >
-            <div className="card w-[450px] bg-base-100 shadow-xl my-[100px] lg:ml-[50px] sm:ml-[100px]">
+            <div className="card w-[450px] bg-base-100 shadow-xl my-[100px] lg:ml-[30px] sm:ml-[100px]">
                <figure><img className="w-[450px] h-[650px]" src={image} alt="Shoes" /></figure>
                 <div className="card-body">
                         <h2 className="card-title">Name : {name}</h2>
