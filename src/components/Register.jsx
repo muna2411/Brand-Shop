@@ -62,8 +62,6 @@ else if(!/[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(pass)){
            })
            
         }
-    
-    
         return (
             <div className="lg:flex justify-between items-center">
                 
