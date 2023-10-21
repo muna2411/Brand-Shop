@@ -49,9 +49,6 @@ const Update = () => {
        <div >
          <div >
          <form onSubmit={handleUpdateProduct} className="grid lg:grid-cols-3 sm:grid-cols-1 m-[50px]">
-     
-              
-     
                    <div className="form-control m-[50px]">
                      <label className="label">
                        <span className="label-text text-[20px] text-black font-semibold">Name</span>
