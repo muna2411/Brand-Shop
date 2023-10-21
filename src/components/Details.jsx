@@ -19,14 +19,12 @@ const [cardDetails, setCardDetails] = useState(loadedUsers);
       const handleGoBack = () =>{
         navigate(-1);
      }
-
-     const handlebtn = e=>{
+      const handlebtn = e=>{
       e.preventDefault();
       const name =cardDetails.name;
       const brand =cardDetails.brand;
       const image =cardDetails.image;
       const price =cardDetails.price;
-     
 
       const cart = {name,brand,image,price};
       fetch('https://brandshop-server-41em3ix38-munas-projects.vercel.app/cart' ,{
