@@ -30,7 +30,7 @@ const handleSwitch = () =>{
     const cards = useLoaderData();
     return (
         <div className="bg-white dark:bg-black" >
-            <button onClick={handleSwitch}  className="btn lg:ml-[1500px] sm:ml-[500px]" >
+            <button onClick={handleSwitch}  className="btn lg:ml-[1000px] sm:ml-[500px]" >
             <label className="swap swap-rotate">
   
   {/* this hidden checkbox controls the state */}
