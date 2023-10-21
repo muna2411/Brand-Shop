@@ -21,7 +21,7 @@ const Update = () => {
         console.log(updated);
 
   
-        fetch(`https://brandshop-server-41em3ix38-munas-projects.vercel.app/users/${_id}`, {
+        fetch(`https://brandshop-server-9p2xpt4wq-munas-projects.vercel.app/users/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

@@ -8,7 +8,7 @@ const Banner=()=> {
  
     return (
   <div>
-        <div className='my-[50px] lg:w-[1200px] sm:w-[630px] h-[700px] lg:mx-[270px] sm:mx[0px] dark:bg-slate-800'>
+        <div className='my-[50px] lg:w-[1200px] sm:w-[630px] h-[700px] lg:mx-[270px] sm:mx[0px] '>
           
     <Swiper
      spaceBetween={30}
@@ -41,11 +41,11 @@ const Banner=()=> {
         </div>
         <div className='grid  justify-around items-center my-[100px] lg:grid-cols-2 sm:grid-cols-1 mx-[50px]'>
         <div>
-            <i className="text-black text-[50px] font-bold mx-[5px]">Individuality of your design. <br/>Create your style .</i>
+            <i className="text-black dark:text-white text-[50px] font-bold mx-[5px]">Individuality of your design. <br/>Create your style .</i>
             <p className="text-[20px] text-[#808080]">High Quality Fashion...</p>
         </div>
         <div>
-            <p className="text-[18px]  ">Welcome to Wish, where style meets innovation and sophistication.
+            <p className="text-[18px] text-black dark:text-white ">Welcome to Wish, where style meets innovation and sophistication.
                                          At Wish, we <br/>are dedicated to redefining fashion through a blend of 
                                          contemporary design, sustainable<br/> practices, and unmatched quality. 
                                          Our team of visionary designers continuously <br/>crafts collections that 
@@ -62,7 +62,7 @@ const Banner=()=> {
 
         
         <div className='text-center my-[80px] mt-[150px]'>
-            <p className="text-black text-[60px] font-bold divider">The Brand Collection</p>
+            <p className="text-black dark:text-white  text-[60px] font-bold divider">The Brand Collection</p>
             <p className="text-[#808080] text-[20px] mt-[50px] ">Choose your fashion style</p>
         </div>
         </div>

@@ -43,29 +43,37 @@ const router = createBrowserRouter([
        {
         path:'/users',
         element:<Users></Users>,
-        loader:() => fetch('https://brandshop-server-41em3ix38-munas-projects.vercel.app/users'),
+        loader:() => fetch('https://brandshop-server-9p2xpt4wq-munas-projects.vercel.app/users'),
         
       },
+
+      // {
+      //   path:'/users/:brand',
+      //   element:<Users></Users>,
+      //   loader:({params}) => fetch(`http://localhost:5000/users/${params}`),
+        
+      // },
+
       {
         path:'/users/:id',
         element:<PrivateRoute><Details></Details></PrivateRoute>,
-        loader:({params}) => fetch(`https://brandshop-server-41em3ix38-munas-projects.vercel.app/users/${params.id}`)
+        loader:({params}) => fetch(`https://brandshop-server-9p2xpt4wq-munas-projects.vercel.app/users/${params.id}`)
         
       },
       {
         path:'/mycart',
         element:<PrivateRoute><Mycart></Mycart></PrivateRoute>,
-        loader:() =>  fetch('https://brandshop-server-41em3ix38-munas-projects.vercel.app/cart')
+        loader:() =>  fetch('https://brandshop-server-9p2xpt4wq-munas-projects.vercel.app/cart')
       },
       {
         path:'/mycart/:id',
         element:<PrivateRoute><Mycart></Mycart></PrivateRoute>,
-        loader:({params}) =>  fetch(`https://brandshop-server-41em3ix38-munas-projects.vercel.app/cart/${params}`)
+        loader:({params}) =>  fetch(`https://brandshop-server-9p2xpt4wq-munas-projects.vercel.app/cart/${params}`)
       },
       {
         path: 'update/:id',
         element: <PrivateRoute><Update></Update></PrivateRoute>,
-        loader:({params}) => fetch(`https://brandshop-server-41em3ix38-munas-projects.vercel.app/users/${params.id}`)
+        loader:({params}) => fetch(`https://brandshop-server-9p2xpt4wq-munas-projects.vercel.app/users/${params.id}`)
       },
     ]
   },

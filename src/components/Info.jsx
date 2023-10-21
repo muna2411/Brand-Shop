@@ -20,10 +20,10 @@ const Info = () => {
         <div className="App">
       <div>
         <div className="text-center mb-[100px] ">
-        <div className="divider">  <h2 className="text-black text-[60px] font-bold ">Wish</h2> </div>
+        <div className="divider">  <h2 className="text-black dark:text-white  text-[60px] font-bold ">Wish</h2> </div>
         <div className="my-[20px]"><i className="text-[20px] text-[#808080] ">The Fashion House..</i></div>
         <div className="mb-[200px]">
-        <p className="text-[18px] text-black">Inspired by a seamless blend of timeless elegance and modern style, our fashion company is dedicated to<br/> 
+        <p className="text-[18px] text-black dark:text-white ">Inspired by a seamless blend of timeless elegance and modern style, our fashion company is dedicated to<br/> 
            offering eco-conscious, inclusive, and empowering clothing choices for all.</p>
         </div>
         </div>
