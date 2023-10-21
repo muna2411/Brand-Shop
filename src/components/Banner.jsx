@@ -49,17 +49,17 @@ const Banner=()=> {
             <p className="text-[20px] text-[#808080]">High Quality Fashion...</p>
         </div>
         <div>
-            <p className="text-[18px]  ">Welcome to Wish, where style meets innovation and sophistication.<br/>
-                                         At Wish, we are dedicated to redefining fashion through a blend of <br/>
-                                         contemporary design, sustainable practices, and unmatched quality. <br/>
-                                         Our team of visionary designers continuously crafts collections that <br/>
-                                         resonate with the latest trends, ensuring you always step out in style. <br/>
+            <p className="text-[18px]  ">Welcome to Wish, where style meets innovation and sophistication.
+                                         At Wish, we <br/>are dedicated to redefining fashion through a blend of 
+                                         contemporary design, sustainable<br/> practices, and unmatched quality. 
+                                         Our team of visionary designers continuously <br/>crafts collections that 
+                                         resonate with the latest trends, ensuring you always step<br/> out in style. 
                                          We take pride in our commitment to sustainability, using eco-friendly <br/>
-                                         materials and ethical manufacturing processes to create fashion that <br/>
-                                         not only makes you look good but feel good about your choices. With a <br/>
-                                         global reach and a seamless online shopping experience, Wish makes it <br/>
-                                         effortless to access our curated fashion selections. From chic urban wear<br/>
-                                         to elegant evening attire, our collections cater to diverse tastes.Discover<br/>
+                                         materials and ethical manufacturing processes to create fashion that 
+                                         not only makes<br/> you look good but feel good about your choices. With a 
+                                         global reach and a seamless <br/>online shopping experience, Wish makes it 
+                                         effortless to access our curated fashion selections.<br/> From chic urban wear
+                                         to elegant evening attire, our collections cater to diverse tastes.<br/>Discover
                                         the essence of timeless style with Wish.</p>
         </div>
         </div>
