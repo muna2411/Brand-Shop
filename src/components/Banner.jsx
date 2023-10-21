@@ -3,14 +3,11 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-
 const Banner=()=> {
  
     return (
-        
-          <div>
+  <div>
         <div className='my-[50px] lg:w-[1200px] sm:w-[630px] h-[700px] lg:mx-[270px] sm:mx[0px] dark:bg-slate-800'>
           
     <Swiper
@@ -39,7 +36,6 @@ const Banner=()=> {
       <SwiperSlide>
       <img className="w-[1200px] h-[700px]"src="https://i.ibb.co/x60TtVJ/37.jpg" ></img>
       </SwiperSlide>
-     
     </Swiper>
  
         </div>
