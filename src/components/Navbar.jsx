@@ -59,9 +59,6 @@ const Navbar = () => {
      
 </div>
 
-
-
-            
             </div>
         </div>
         <div className="divider text-[20px] text-black"></div>
