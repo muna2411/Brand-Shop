@@ -1,21 +1,27 @@
-import { useState } from 'react';
-import {  useLoaderData } from 'react-router-dom';
+
+import {  useLoaderData, useParams } from 'react-router-dom';
 import Store from './Store';
 import Adver from './Adver';
 
 const Users = () => {
     
     const loadedUsers =useLoaderData();
-    const [users,setUsers] = useState(loadedUsers);
+   
+    const {brand} = useParams();
+    const filter = loadedUsers.filter(p => p.brand === brand );
    
 
     return (
         <div>
             <Adver></Adver>
+            {
+                filter.length === 0 ? (<p className="text-black text-[50px] font-bold text-center">Stock Out All Products</p>) : (<p className="text-black text-[50px] font-bold text-center">Available Products</p>)
+            }
 
             <div className="grid lg:grid-cols-3 sm:grid-cols-1 lg:mx-[80px] mb-[200px] ">
                 {
-                    users.map(user => <Store key={user._id} user={user} users={users} setUsers={setUsers}></Store>)
+                     filter.map(p => <Store key={p._id} p={p}></Store>)
+                    
                 }
             </div>
         </div>

@@ -41,16 +41,16 @@ const router = createBrowserRouter([
         element:<Register></Register>
        },
        {
-        path:'/users',
+        path:'/users/:brand',
         element:<Users></Users>,
         loader:() => fetch('https://brandshop-server-9p2xpt4wq-munas-projects.vercel.app/users'),
         
       },
 
       // {
-      //   path:'/users/:brand',
+      //   path:'/brand/:brand',
       //   element:<Users></Users>,
-      //   loader:({params}) => fetch(`http://localhost:5000/users/${params}`),
+      //   loader:({params}) => fetch(`http://localhost:5000/brand),
         
       // },
 

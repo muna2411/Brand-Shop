@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
-const Store = ({user}) => {
-    const  {_id,name,brand,types,price,description,ratings,image} = user;
+const Store = ({p}) => {
+    const  {_id,name,brand,types,price,ratings,image} = p;
     return (
     <div >
         <div >
