@@ -17,8 +17,9 @@ const Info = () => {
       }, []);
     return (
         
-        <div className="App">
-      <div>
+       <div>
+         <div className="App">
+        <div>
         <div className="text-center mb-[100px] ">
         <div className="divider">  <h2 className="text-black dark:text-white  text-[60px] font-bold ">Wish</h2> </div>
         <div className="my-[20px]"><i className="text-[20px] text-[#808080] ">The Fashion House..</i></div>
@@ -41,6 +42,8 @@ const Info = () => {
         />
       </div>
     </div>
+    
+       </div>
     );
 };
 

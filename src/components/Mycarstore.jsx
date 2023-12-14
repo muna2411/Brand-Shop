@@ -18,7 +18,7 @@ const Mycarstore = ({user,users,setUsers}) => {
             if (result.isConfirmed) {
 
                console.log('confirm')
-                fetch(`https://brandshop-server-72yncchhw-munas-projects.vercel.app/cart/${_id}`, {
+                fetch(`https://brandshop-server-fr82m9ihx-munas-projects.vercel.app/cart/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

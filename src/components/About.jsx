@@ -7,8 +7,8 @@ const About = () => {
                 
             </div>
             <div className="text-white text-center lg:mr-[200px] sm:mr-[0px]">
-                <h2 className="text-[40px]">Exclusive Designs Crafed by Experts</h2>
-                <i className="text-[18px]">High Quality</i>
+                <h2 className="text-[40px] ">Exclusive Designs Crafed by Experts</h2>
+                <i className="text-[18px] ">High Quality</i>
                 <div className="divider h-[2px]" style={{ backgroundColor: 'white' }}></div>
                 <p className="text-white text-center">At our fashion company, we have created a harmonious fusion of timeless elegance and<br/>
                                                          contemporary style. Our commitment to sustainability runs deep, as we meticulously <br/>

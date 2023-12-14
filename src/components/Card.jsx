@@ -11,10 +11,10 @@ const Card = ({cards}) => {
             
             <div className="carousel rounded-box lg:ml-[0px] sm:ml-[100px]">
                 <div className="carousel-item">
-            <Link to={`/users/${brand}`}  >
+            <Link to={`/users`}  >
                    <button  className='hero min-h-screen '> 
                     <img className='w-[460px] h-[700px]' src={image_url}  />
-                    <div className='mt-[-80px] hero-overlay bg-opacity-60 h-[80px]'>
+                    <div className='mt-[-80px] hero-overlay bg-opacity-60 h-[60px]'>
                     <i className='text-[50px] text-white text-center'>{brand}</i>
                     </div>
                     </button>
