@@ -7,8 +7,8 @@ const Users = () => {
     
     const loadedUsers =useLoaderData();
    
-  // const {brand} = useParams();
-    //const filter = loadedUsers.filter(p => p.brand === brand );
+   // const {brand} = useParams();
+   // const filter = loadedUsers.filter(p => p.brand === brand );
    
 
     return (

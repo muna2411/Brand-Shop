@@ -8,7 +8,7 @@ const Banner=()=> {
  
     return (
   <div>
-        <div className='my-[50px] lg:w-[1200px] sm:w-[630px] h-[700px] lg:mx-[270px] sm:mx[0px] '>
+        <div className='my-[50px] lg:w-[1200px] sm:w-[630px] h-[700px] lg:mx-auto sm:mx[0px] '>
           
     <Swiper
      spaceBetween={30}
